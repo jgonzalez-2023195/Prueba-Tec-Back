@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "cbe30c95-d39b-4c2e-8b98-64dd7a0a34e4",
+		"name": "Prueba-Tec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956953"
+	},
+	"item": [
+		{
+			"name": "New Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Automovilismo",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Las 6 horas de Interlagos - Brazil",
+							"type": "text"
+						},
+						{
+							"key": "thumbnail",
+							"value": "https://tse1.mm.bing.net/th/id/OIP.vW26jCzpKjhJXk4c_UAZZAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Después de las 24 Horas de Le Mans, el Mundial de Resistencia vuelve para la quinta ronda en 2025 en Interlagos, la última antes del parón veraniego, para entrar en la segunda parte del año.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/blog/v2/createPost",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v2",
+						"createPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/blog/v2/posts/Guatemala-paisajes/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v2",
+						"posts",
+						"Guatemala-paisajes",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Comment your post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Waos",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Juancho",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/blog/v2/posts/Guatemala-paisajes/add-comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v2",
+						"posts",
+						"Guatemala-paisajes",
+						"add-comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
